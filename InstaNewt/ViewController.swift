@@ -12,8 +12,6 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imageCollectionView: UICollectionView!
     
-    let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
