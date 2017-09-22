@@ -175,12 +175,10 @@
 				ACB94F251F74FF7600EC586D /* UploadFileVC.swift in Sources */,
 				49C1DAD01F74F3F60056EA86 /* MainViewController.swift in Sources */,
 				49C1DACE1F74F3F60056EA86 /* AppDelegate.swift in Sources */,
-<<<<<<< HEAD
 				49E554221F7503480088D612 /* Post.swift in Sources */,
 				4997B39E1F750C5100B7CE41 /* PostCell.swift in Sources */,
-=======
 				ACB94F271F750B6000EC586D /* viewImageVC.swift in Sources */,
->>>>>>> 2d20fc7009defb2c51772d956cd7a62a117abc57
+2d20fc7009defb2c51772d956cd7a62a117abc57
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

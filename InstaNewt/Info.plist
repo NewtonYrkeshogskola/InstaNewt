@@ -45,5 +45,7 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>Använd kameran!</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Använd dina bilder!</string>
 </dict>
 </plist>

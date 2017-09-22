@@ -20,6 +20,7 @@ class UploadFileVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
         // Do any additional setup after loading the view.
     }
     @IBAction func openCameraBtn(_ sender: Any) {
+        
         if (UIImagePickerController .isSourceTypeAvailable( UIImagePickerControllerSourceType.camera)) {
             imagePicker.sourceType = UIImagePickerControllerSourceType.camera
             imagePicker.allowsEditing = true
@@ -33,6 +34,10 @@ class UploadFileVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
     }
     
     @IBAction func openLibraryBtn(_ sender: Any) {
+        
+        imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        imagePicker.allowsEditing = true
+        self.present(imagePicker, animated: true, completion: nil)
         
     }
     
