@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		490D87EF1F75261D008D47D7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D87EE1F75261D008D47D7 /* Post.swift */; };
 		49C1DACE1F74F3F60056EA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C1DACD1F74F3F60056EA86 /* AppDelegate.swift */; };
 		49C1DAD01F74F3F60056EA86 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C1DACF1F74F3F60056EA86 /* MainViewController.swift */; };
 		49C1DAD31F74F3F60056EA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C1DAD11F74F3F60056EA86 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		490D87EE1F75261D008D47D7 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		49C1DACA1F74F3F60056EA86 /* InstaNewt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaNewt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C1DACD1F74F3F60056EA86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49C1DACF1F74F3F60056EA86 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		ACF64A061F7515F800382ED5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				490D87EE1F75261D008D47D7 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				ACB94F251F74FF7600EC586D /* UploadFileVC.swift in Sources */,
 				49C1DAD01F74F3F60056EA86 /* MainViewController.swift in Sources */,
 				49C1DACE1F74F3F60056EA86 /* AppDelegate.swift in Sources */,
+				490D87EF1F75261D008D47D7 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
