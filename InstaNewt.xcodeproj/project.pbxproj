@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		49C1DACE1F74F3F60056EA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C1DACD1F74F3F60056EA86 /* AppDelegate.swift */; };
-		49C1DAD01F74F3F60056EA86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C1DACF1F74F3F60056EA86 /* ViewController.swift */; };
+		49C1DAD01F74F3F60056EA86 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C1DACF1F74F3F60056EA86 /* MainViewController.swift */; };
 		49C1DAD31F74F3F60056EA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C1DAD11F74F3F60056EA86 /* Main.storyboard */; };
 		49C1DAD51F74F3F60056EA86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C1DAD41F74F3F60056EA86 /* Assets.xcassets */; };
 		49C1DAD81F74F3F60056EA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C1DAD61F74F3F60056EA86 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		49C1DACA1F74F3F60056EA86 /* InstaNewt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaNewt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C1DACD1F74F3F60056EA86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		49C1DACF1F74F3F60056EA86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49C1DACF1F74F3F60056EA86 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		49C1DAD21F74F3F60056EA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49C1DAD41F74F3F60056EA86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49C1DAD71F74F3F60056EA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +54,22 @@
 		49C1DACC1F74F3F60056EA86 /* InstaNewt */ = {
 			isa = PBXGroup;
 			children = (
+				ACB94F231F74FC2500EC586D /* Controller */,
 				49C1DACD1F74F3F60056EA86 /* AppDelegate.swift */,
-				49C1DACF1F74F3F60056EA86 /* ViewController.swift */,
 				49C1DAD11F74F3F60056EA86 /* Main.storyboard */,
 				49C1DAD41F74F3F60056EA86 /* Assets.xcassets */,
 				49C1DAD61F74F3F60056EA86 /* LaunchScreen.storyboard */,
 				49C1DAD91F74F3F60056EA86 /* Info.plist */,
 			);
 			path = InstaNewt;
+			sourceTree = "<group>";
+		};
+		ACB94F231F74FC2500EC586D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				49C1DACF1F74F3F60056EA86 /* MainViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49C1DAD01F74F3F60056EA86 /* ViewController.swift in Sources */,
+				49C1DAD01F74F3F60056EA86 /* MainViewController.swift in Sources */,
 				49C1DACE1F74F3F60056EA86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
