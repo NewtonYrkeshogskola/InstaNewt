@@ -13,6 +13,7 @@
 		49C1DAD31F74F3F60056EA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C1DAD11F74F3F60056EA86 /* Main.storyboard */; };
 		49C1DAD51F74F3F60056EA86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C1DAD41F74F3F60056EA86 /* Assets.xcassets */; };
 		49C1DAD81F74F3F60056EA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C1DAD61F74F3F60056EA86 /* LaunchScreen.storyboard */; };
+		A5081D991F75436E00162A3E /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5081D981F75436E00162A3E /* Globals.swift */; };
 		ACB94F251F74FF7600EC586D /* UploadFileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB94F241F74FF7600EC586D /* UploadFileVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		49C1DAD41F74F3F60056EA86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49C1DAD71F74F3F60056EA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49C1DAD91F74F3F60056EA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5081D981F75436E00162A3E /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		ACB94F241F74FF7600EC586D /* UploadFileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFileVC.swift; sourceTree = "<group>"; };
 		ACB94F261F750B6000EC586D /* viewImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewImageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 		ACB94F231F74FC2500EC586D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A5081D981F75436E00162A3E /* Globals.swift */,
 				49C1DACF1F74F3F60056EA86 /* MainViewController.swift */,
 				ACB94F241F74FF7600EC586D /* UploadFileVC.swift */,
 				ACB94F261F750B6000EC586D /* viewImageVC.swift */,
@@ -171,6 +174,7 @@
 				ACB94F251F74FF7600EC586D /* UploadFileVC.swift in Sources */,
 				49C1DAD01F74F3F60056EA86 /* MainViewController.swift in Sources */,
 				49C1DACE1F74F3F60056EA86 /* AppDelegate.swift in Sources */,
+				A5081D991F75436E00162A3E /* Globals.swift in Sources */,
 				490D87EF1F75261D008D47D7 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

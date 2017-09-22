@@ -64,6 +64,8 @@ class UploadFileVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
         let blobb: NSData = UIImagePNGRepresentation(mainImage.image!)! as NSData
         let postobj = Post(imageText.text, blobb, false)
         
+        imagearray.append(postobj)
+        
     }
     
 }
