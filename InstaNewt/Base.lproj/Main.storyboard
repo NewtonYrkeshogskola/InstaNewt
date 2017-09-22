@@ -244,6 +244,9 @@
                     <navigationItem key="navigationItem" title="Add a new picture" id="MVd-Ym-A34">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="I4e-HA-Ofi"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mainImage" destination="Y1Z-ri-fCb" id="4ru-ao-L1C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Liy-KU-Ecx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

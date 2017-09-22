@@ -13,6 +13,7 @@ class UploadFileVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
     var imagePicker = UIImagePickerController()
     var imageTake = UIImageView()
     
+    @IBOutlet weak var mainImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,7 +50,9 @@ class UploadFileVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         imagePicker.dismiss(animated: true, completion: nil)
-        imageTake.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        print("hejhej")
+        mainImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        
     }
 
 }
