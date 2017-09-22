@@ -11,6 +11,7 @@ import UIKit
 class UploadFileVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     var imagePicker = UIImagePickerController()
+    var imageTake = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +28,8 @@ class UploadFileVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
             self.present(imagePicker, animated: true, completion: nil)
         }
         else {
-            let alert = UIAlertController(title: "Fel!", message: "Ingen kamera? du skojar!", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "knapp", style: .default, handler: nil))
+            let alert = UIAlertController(title: "Fel!", message: "Ingen kamera? Du skojar!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Knapp", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
     }
@@ -46,15 +47,9 @@ class UploadFileVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        imagePicker.dismiss(animated: true, completion: nil)
+        imageTake.image = info[UIImagePickerControllerOriginalImage] as? UIImage
     }
-    */
 
 }
