@@ -63,9 +63,7 @@
 				ACF64A051F7515F100382ED5 /* View */,
 				ACB94F231F74FC2500EC586D /* Controller */,
 				49C1DACD1F74F3F60056EA86 /* AppDelegate.swift */,
-				49C1DAD11F74F3F60056EA86 /* Main.storyboard */,
 				49C1DAD41F74F3F60056EA86 /* Assets.xcassets */,
-				49C1DAD61F74F3F60056EA86 /* LaunchScreen.storyboard */,
 				49C1DAD91F74F3F60056EA86 /* Info.plist */,
 			);
 			path = InstaNewt;
@@ -84,6 +82,8 @@
 		ACF64A051F7515F100382ED5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				49C1DAD11F74F3F60056EA86 /* Main.storyboard */,
+				49C1DAD61F74F3F60056EA86 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
