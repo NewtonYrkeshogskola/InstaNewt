@@ -242,9 +242,14 @@
                         <viewLayoutGuide key="safeArea" id="CKF-zb-84s"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add a new picture" id="MVd-Ym-A34">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="I4e-HA-Ofi"/>
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="I4e-HA-Ofi">
+                            <connections>
+                                <action selector="addButton:" destination="Keb-0e-fwO" id="ZcB-fZ-AzZ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="imageText" destination="lzs-p7-XVw" id="kVW-Dy-aad"/>
                         <outlet property="mainImage" destination="Y1Z-ri-fCb" id="4ru-ao-L1C"/>
                     </connections>
                 </viewController>

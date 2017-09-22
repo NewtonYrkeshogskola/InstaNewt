@@ -11,7 +11,7 @@ import UIKit
 class UploadFileVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     var imagePicker = UIImagePickerController()
-    var imageTake = UIImageView()
+    ///var imageTake = UIImageView()
     
     @IBOutlet weak var mainImage: UIImageView!
     override func viewDidLoad() {
@@ -21,6 +21,7 @@ class UploadFileVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
 
         // Do any additional setup after loading the view.
     }
+    
     @IBAction func openCameraBtn(_ sender: Any) {
         
         if (UIImagePickerController .isSourceTypeAvailable( UIImagePickerControllerSourceType.camera)) {
@@ -50,9 +51,19 @@ class UploadFileVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         imagePicker.dismiss(animated: true, completion: nil)
-        print("hejhej")
-        mainImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        mainImage.image = info[UIImagePickerControllerEditedImage] as? UIImage
         
     }
-
+    
+    @IBOutlet weak var imageText: UITextView!
+    
+    @IBAction func addButton(_ sender: Any) {
+        
+        //let imagedata = UIImage(named: "dog.png")
+        
+        let blobb: NSData = UIImagePNGRepresentation(mainImage.image!)! as NSData
+        let postobj = Post(imageText.text, blobb, false)
+        
+    }
+    
 }
