@@ -151,6 +151,11 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzD-DH-14h">
+                                <rect key="frame" x="186" y="408" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -177,8 +182,7 @@
             </objects>
             <point key="canvasLocation" x="476" y="133.5832083958021"/>
         </scene>
-
-        <!--Upload FileVC-->
+        <!--Add a new picture-->
         <scene sceneID="KOe-Dv-ueC">
             <objects>
                 <viewController id="Keb-0e-fwO" customClass="UploadFileVC" customModule="InstaNewt" customModuleProvider="target" sceneMemberID="viewController">
