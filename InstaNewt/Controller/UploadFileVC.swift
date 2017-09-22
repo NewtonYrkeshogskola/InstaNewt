@@ -8,14 +8,34 @@
 
 import UIKit
 
-class UploadFileVC: UIViewController {
+class UploadFileVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    var imagePicker = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imagePicker.delegate = self
 
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func openCameraBtn(_ sender: Any) {
+        if (UIImagePickerController .isSourceTypeAvailable( UIImagePickerControllerSourceType.camera)) {
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera
+            imagePicker.allowsEditing = true
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+        else {
+            let alert = UIAlertController(title: "Fel!", message: "Ingen kamera? du skojar!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "knapp", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func openLibraryBtn(_ sender: Any) {
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
