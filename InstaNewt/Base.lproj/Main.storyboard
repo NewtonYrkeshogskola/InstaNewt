@@ -177,8 +177,7 @@
             </objects>
             <point key="canvasLocation" x="476" y="133.5832083958021"/>
         </scene>
-
-        <!--Upload FileVC-->
+        <!--Add a new picture-->
         <scene sceneID="KOe-Dv-ueC">
             <objects>
                 <viewController id="Keb-0e-fwO" customClass="UploadFileVC" customModule="InstaNewt" customModuleProvider="target" sceneMemberID="viewController">
@@ -244,10 +243,10 @@
             </objects>
             <point key="canvasLocation" x="1264.8" y="-190.25487256371815"/>
         </scene>
-        <!--View Controller-->
+        <!--View ImageVC-->
         <scene sceneID="wpB-hN-ekJ">
             <objects>
-                <viewController id="eNg-Of-dKj" sceneMemberID="viewController">
+                <viewController id="eNg-Of-dKj" customClass="viewImageVC" customModule="InstaNewt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LBF-jM-bjg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -15,6 +15,7 @@
 		49C1DAD81F74F3F60056EA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C1DAD61F74F3F60056EA86 /* LaunchScreen.storyboard */; };
 		49E554221F7503480088D612 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E554211F7503480088D612 /* Post.swift */; };
 		ACB94F251F74FF7600EC586D /* UploadFileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB94F241F74FF7600EC586D /* UploadFileVC.swift */; };
+		ACB94F271F750B6000EC586D /* viewImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB94F261F750B6000EC586D /* viewImageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		49C1DAD91F74F3F60056EA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49E554211F7503480088D612 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		ACB94F241F74FF7600EC586D /* UploadFileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFileVC.swift; sourceTree = "<group>"; };
+		ACB94F261F750B6000EC586D /* viewImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewImageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				49C1DACF1F74F3F60056EA86 /* MainViewController.swift */,
 				ACB94F241F74FF7600EC586D /* UploadFileVC.swift */,
+				ACB94F261F750B6000EC586D /* viewImageVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,8 +175,12 @@
 				ACB94F251F74FF7600EC586D /* UploadFileVC.swift in Sources */,
 				49C1DAD01F74F3F60056EA86 /* MainViewController.swift in Sources */,
 				49C1DACE1F74F3F60056EA86 /* AppDelegate.swift in Sources */,
+<<<<<<< HEAD
 				49E554221F7503480088D612 /* Post.swift in Sources */,
 				4997B39E1F750C5100B7CE41 /* PostCell.swift in Sources */,
+=======
+				ACB94F271F750B6000EC586D /* viewImageVC.swift in Sources */,
+>>>>>>> 2d20fc7009defb2c51772d956cd7a62a117abc57
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
