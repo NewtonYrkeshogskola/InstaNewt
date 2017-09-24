@@ -65,7 +65,9 @@ class UploadFileVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
         let postobj = Post(favourite: false, imageText: imageText.text ,imageData: blobb)
         
         imageArray.append(postobj)
-        self.dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: "backToHome", sender: self)
     }
+    
+    
     
 }

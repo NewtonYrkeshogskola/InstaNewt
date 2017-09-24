@@ -29,5 +29,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         return ImageCell()
     }
+    
+    @IBAction func unwindToStart(segue: UIStoryboardSegue) { }
 
 }
