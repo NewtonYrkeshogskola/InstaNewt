@@ -54,6 +54,9 @@
                                             <constraint firstItem="NT5-kb-NKD" firstAttribute="top" secondItem="uU7-bE-pKD" secondAttribute="top" id="r82-Fn-3Rn"/>
                                             <constraint firstItem="NT5-kb-NKD" firstAttribute="leading" secondItem="uU7-bE-pKD" secondAttribute="leading" id="wsD-MG-Qbc"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="postImage" destination="NT5-kb-NKD" id="0Fi-u8-eKt"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

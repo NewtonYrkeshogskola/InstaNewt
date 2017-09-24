@@ -8,7 +8,7 @@
 
 import Foundation
 
-var imagearray : [Post] = []
+var imageArray : [Post] = []
 
 
 
