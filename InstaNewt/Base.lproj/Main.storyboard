@@ -80,7 +80,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imageCollectionView" destination="n8q-uJ-Wq5" id="AP3-fG-h1T"/>
-                        <segue destination="eNg-Of-dKj" kind="show" identifier="viewImage" id="RnT-VD-EVL"/>
+                        <segue destination="eNg-Of-dKj" kind="show" identifier="viewPost" id="RnT-VD-EVL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -183,7 +183,7 @@
                                     <constraint firstAttribute="width" secondItem="vyU-VU-bAX" secondAttribute="height" multiplier="15:14" id="aWq-aZ-c4c"/>
                                 </constraints>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jkG-YD-Oui">
+                            <visualEffectView opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jkG-YD-Oui">
                                 <rect key="frame" x="0.0" y="64" width="375" height="350"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6w4-bR-JIy">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>

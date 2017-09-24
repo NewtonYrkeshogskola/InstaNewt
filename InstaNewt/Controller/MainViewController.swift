@@ -39,6 +39,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "viewPost", sender: imageArray[indexPath.row])
+    }
+    
+    // Send the selected post
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "viewPost" {
+            let clicked = segue.destination as! ViewPostVC
+            clicked.post = sender as? Post
+        }
+    }
+    
     @IBAction func unwindToStart(segue: UIStoryboardSegue) { }
 
 }

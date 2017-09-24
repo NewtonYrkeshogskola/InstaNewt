@@ -15,13 +15,28 @@ class ViewPostVC: UIViewController {
     @IBOutlet weak var mainLbl: UILabel!
     @IBOutlet weak var likeBtn: UIButton!
     
+    var post: Post!
+    
+    let likedImg = UIImage(named: "liked")
+    let unlikedImg = UIImage(named: "like")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        blurredImg.image = UIImage(data: post.imageData as Data,scale:1.0)
+        mainImage.image = UIImage(data: post.imageData as Data,scale:1.0)
+        mainLbl.text = post.imageText
+        
+        if post.favourite == true {
+            likeBtn.setImage(likedImg, for: .normal)
+        } else {
+            likeBtn.setImage(unlikedImg, for: .normal)
+        }
+        
     }
 
     @IBAction func likeAcn(_ sender: Any) {
+        likeBtn.setImage(likedImg, for: .normal)
     }
     
 
