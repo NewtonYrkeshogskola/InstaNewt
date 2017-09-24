@@ -65,6 +65,7 @@ class UploadFileVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
         let postobj = Post(imageText.text, blobb, false)
         
         imagearray.append(postobj)
+        print(postobj.favourite, postobj.imageData, postobj.imageText)
         
     }
     

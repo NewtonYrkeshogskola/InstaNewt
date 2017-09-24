@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var imageCollectionView: UICollectionView!
     
@@ -16,8 +16,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return imagearray.count
+    }
     
-    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as? ProductCell {
+            let product = products[indexPath.row]
+            cell.updateViews(product: product)
+            return cell
+        }
+        
+        return ProductCell()
+    }
 
 }
-

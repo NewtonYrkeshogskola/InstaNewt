@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,7 +36,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uU7-bE-pKD">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="uU7-bE-pKD">
                                         <rect key="frame" x="0.0" y="0.0" width="123" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -90,21 +91,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bread" translatesAutoresizingMaskIntoConstraints="NO" id="Y1Z-ri-fCb">
-                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="v43-98-jyw"/>
-                                </constraints>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lzs-p7-XVw">
-                                <rect key="frame" x="15" y="336" width="345" height="291"/>
+                                <rect key="frame" x="15" y="488" width="345" height="139"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hsm-zu-7rB">
-                                <rect key="frame" x="15" y="284" width="345" height="32"/>
+                                <rect key="frame" x="15" y="436" width="345" height="32"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxQ-xI-CmJ">
                                         <rect key="frame" x="0.0" y="0.0" width="167.5" height="32"/>
@@ -130,19 +124,25 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bread" translatesAutoresizingMaskIntoConstraints="NO" id="Y1Z-ri-fCb">
+                                <rect key="frame" x="15" y="79" width="347" height="347"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Y1Z-ri-fCb" secondAttribute="height" multiplier="1:1" id="GPZ-X5-jJb"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.89923873889999995" green="0.92066124650000003" blue="0.95947017769999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="hsm-zu-7rB" firstAttribute="top" secondItem="Y1Z-ri-fCb" secondAttribute="bottom" constant="20" id="0zv-fj-vdt"/>
-                            <constraint firstItem="Y1Z-ri-fCb" firstAttribute="top" secondItem="CKF-zb-84s" secondAttribute="top" id="4ii-Dk-gZ9"/>
                             <constraint firstItem="CKF-zb-84s" firstAttribute="trailing" secondItem="lzs-p7-XVw" secondAttribute="trailing" constant="15" id="EhE-2k-D8v"/>
                             <constraint firstItem="hsm-zu-7rB" firstAttribute="leading" secondItem="CKF-zb-84s" secondAttribute="leading" constant="15" id="FWc-FG-SH7"/>
-                            <constraint firstItem="Y1Z-ri-fCb" firstAttribute="trailing" secondItem="CKF-zb-84s" secondAttribute="trailing" id="HdB-sf-OHG"/>
                             <constraint firstItem="lzs-p7-XVw" firstAttribute="top" secondItem="hsm-zu-7rB" secondAttribute="bottom" constant="20" id="Ik9-iN-QfV"/>
+                            <constraint firstItem="Y1Z-ri-fCb" firstAttribute="leading" secondItem="CKF-zb-84s" secondAttribute="leading" constant="15" id="OEu-C4-6uB"/>
                             <constraint firstItem="CKF-zb-84s" firstAttribute="trailing" secondItem="hsm-zu-7rB" secondAttribute="trailing" constant="15" id="T2d-qF-T1E"/>
-                            <constraint firstItem="Y1Z-ri-fCb" firstAttribute="leading" secondItem="CKF-zb-84s" secondAttribute="leading" id="ffR-gC-iHh"/>
+                            <constraint firstItem="Y1Z-ri-fCb" firstAttribute="top" secondItem="CKF-zb-84s" secondAttribute="top" constant="15" id="Ti3-mc-nBU"/>
                             <constraint firstItem="CKF-zb-84s" firstAttribute="bottom" secondItem="lzs-p7-XVw" secondAttribute="bottom" constant="40" id="neQ-ts-HlX"/>
+                            <constraint firstItem="hsm-zu-7rB" firstAttribute="top" secondItem="Y1Z-ri-fCb" secondAttribute="bottom" constant="10" id="pcp-tk-myq"/>
                             <constraint firstItem="lzs-p7-XVw" firstAttribute="leading" secondItem="CKF-zb-84s" secondAttribute="leading" constant="15" id="wgv-4Q-BBT"/>
+                            <constraint firstItem="CKF-zb-84s" firstAttribute="trailing" secondItem="Y1Z-ri-fCb" secondAttribute="trailing" constant="13" id="xzg-K1-980"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CKF-zb-84s"/>
                     </view>
