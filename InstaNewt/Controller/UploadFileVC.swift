@@ -62,11 +62,10 @@ class UploadFileVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
         //let imagedata = UIImage(named: "dog.png")
         
         let blobb: NSData = UIImagePNGRepresentation(mainImage.image!)! as NSData
-        let postobj = Post(imageText.text, blobb, false)
+        let postobj = Post(favourite: false, imageText: imageText.text ,imageData: blobb)
         
-        imagearray.append(postobj)
-        print(postobj.favourite, postobj.imageData, postobj.imageText)
-        
+        imageArray.append(postobj)
+        self.dismiss(animated: true, completion: nil)
     }
     
 }

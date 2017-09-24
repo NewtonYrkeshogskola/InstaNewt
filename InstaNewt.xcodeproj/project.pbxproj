@@ -15,6 +15,7 @@
 		49C1DAD81F74F3F60056EA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C1DAD61F74F3F60056EA86 /* LaunchScreen.storyboard */; };
 		A5081D991F75436E00162A3E /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5081D981F75436E00162A3E /* Globals.swift */; };
 		ACB94F251F74FF7600EC586D /* UploadFileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB94F241F74FF7600EC586D /* UploadFileVC.swift */; };
+		ACC313F21F77D4B500A75124 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB94F261F750B6000EC586D /* ImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +29,7 @@
 		49C1DAD91F74F3F60056EA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5081D981F75436E00162A3E /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		ACB94F241F74FF7600EC586D /* UploadFileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFileVC.swift; sourceTree = "<group>"; };
-		ACB94F261F750B6000EC586D /* viewImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewImageVC.swift; sourceTree = "<group>"; };
+		ACB94F261F750B6000EC586D /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +78,7 @@
 				A5081D981F75436E00162A3E /* Globals.swift */,
 				49C1DACF1F74F3F60056EA86 /* MainViewController.swift */,
 				ACB94F241F74FF7600EC586D /* UploadFileVC.swift */,
-				ACB94F261F750B6000EC586D /* viewImageVC.swift */,
+				ACB94F261F750B6000EC586D /* ImageCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -176,6 +177,7 @@
 				49C1DACE1F74F3F60056EA86 /* AppDelegate.swift in Sources */,
 				A5081D991F75436E00162A3E /* Globals.swift in Sources */,
 				490D87EF1F75261D008D47D7 /* Post.swift in Sources */,
+				ACC313F21F77D4B500A75124 /* ImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

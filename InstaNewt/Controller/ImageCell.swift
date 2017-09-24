@@ -8,22 +8,16 @@
 
 import UIKit
 
-class viewImageVC: UIViewController {
+class ImageCell: UICollectionViewCell {
 
     @IBOutlet weak var postImage: UIImageView!
     @IBOutlet weak var postText: UILabel!
     @IBOutlet weak var likeBtn: UIButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func updateViews(image: Post) {
+        postImage.image = UIImage(data:image.imageData as Data,scale:1.0)
+        // postText.text = image.imageText - Set post text
+        // likeBtn.text = image.favourite - Set heart to image
     }
     
-
 }

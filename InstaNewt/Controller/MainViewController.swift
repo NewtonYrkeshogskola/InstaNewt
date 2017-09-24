@@ -17,17 +17,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imagearray.count
+        return imageArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as? ProductCell {
-            let product = products[indexPath.row]
-            cell.updateViews(product: product)
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PostCollectionViewCell", for: indexPath) as? ImageCell {
+            let post = imageArray[indexPath.row]
+            cell.updateViews(image: post)
             return cell
         }
         
-        return ProductCell()
+        return ImageCell()
     }
 
 }

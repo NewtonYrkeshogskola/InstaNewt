@@ -9,25 +9,14 @@
 import Foundation
 
 class Post {
-    private var _imageData: NSData
-    private var _imageText: String
-    private var _favourite: Bool
     
-    var imageData: NSData {
-        return _imageData
-    }
+    private(set) public var favourite: Bool!
+    private(set) public var imageText: String!
+    private(set) public var imageData: NSData!
     
-    var imageText: String {
-        return _imageText
-    }
-    
-    var favourite: Bool {
-        return _favourite
-    }
-    
-    init(_ text: String,_ imageData: NSData,_ favourite: Bool) {
-        _imageText = text
-        _imageData = imageData
-        _favourite = favourite
+    init(favourite: Bool, imageText: String, imageData: NSData) {
+        self.favourite = favourite
+        self.imageText = imageText
+        self.imageData = imageData
     }
 }
