@@ -11,13 +11,9 @@ import UIKit
 class ImageCell: UICollectionViewCell {
 
     @IBOutlet weak var postImage: UIImageView!
-    @IBOutlet weak var postText: UILabel!
-    @IBOutlet weak var likeBtn: UIButton!
     
     func updateViews(image: Post) {
         postImage.image = UIImage(data:image.imageData as Data,scale:1.0)
-        // postText.text = image.imageText - Set post text
-        // likeBtn.text = image.favourite - Set heart to image
     }
     
 }

@@ -36,7 +36,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PostCollectionViewCell" id="uU7-bE-pKD" customClass="ImageCell">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PostCollectionViewCell" id="uU7-bE-pKD" customClass="ImageCell" customModule="InstaNewt" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="123" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -45,6 +45,7 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bread" translatesAutoresizingMaskIntoConstraints="NO" id="NT5-kb-NKD">
                                                     <rect key="frame" x="0.0" y="0.0" width="123" height="128"/>
+                                                    <color key="backgroundColor" red="0.87040299180000003" green="0.47469884159999998" blue="0.18026256560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
@@ -212,11 +213,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RBr-PR-V51"/>
                     </view>
-                    <connections>
-                        <outlet property="likeBtn" destination="dQ3-hG-rfv" id="A4u-ql-34T"/>
-                        <outlet property="postImage" destination="4rG-Tl-lDk" id="ib2-OM-7sk"/>
-                        <outlet property="postText" destination="sdM-i1-zBX" id="GTu-OB-bQH"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qk6-MU-nQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

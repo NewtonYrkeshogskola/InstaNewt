@@ -14,6 +14,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imageCollectionView.delegate = self
+        imageCollectionView.dataSource = self
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -28,6 +31,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
         
         return ImageCell()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+            self.imageCollectionView.reloadData()
+        
     }
     
     @IBAction func unwindToStart(segue: UIStoryboardSegue) { }
