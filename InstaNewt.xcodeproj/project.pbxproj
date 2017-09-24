@@ -65,6 +65,8 @@
 				ACF64A061F7515F800382ED5 /* Model */,
 				ACF64A051F7515F100382ED5 /* View */,
 				ACB94F231F74FC2500EC586D /* Controller */,
+				49C1DAD11F74F3F60056EA86 /* Main.storyboard */,
+				49C1DAD61F74F3F60056EA86 /* LaunchScreen.storyboard */,
 				49C1DACD1F74F3F60056EA86 /* AppDelegate.swift */,
 				49C1DAD41F74F3F60056EA86 /* Assets.xcassets */,
 				49C1DAD91F74F3F60056EA86 /* Info.plist */,
@@ -78,7 +80,6 @@
 				A5081D981F75436E00162A3E /* Globals.swift */,
 				49C1DACF1F74F3F60056EA86 /* MainViewController.swift */,
 				ACB94F241F74FF7600EC586D /* UploadFileVC.swift */,
-				ACB94F261F750B6000EC586D /* ImageCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -86,8 +87,7 @@
 		ACF64A051F7515F100382ED5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				49C1DAD11F74F3F60056EA86 /* Main.storyboard */,
-				49C1DAD61F74F3F60056EA86 /* LaunchScreen.storyboard */,
+				ACB94F261F750B6000EC586D /* ImageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
